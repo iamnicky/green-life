@@ -1,9 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home';
 
 function App() {
   return (
-   <div className='text-green-500'>hello world</div>
+    <div className=''>
+      <Home/>
+    </div>
   );
 }
 
