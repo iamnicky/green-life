@@ -1,3 +1,36 @@
 .bg-image{
-    background-image: url("https://a-static.besthdwallpaper.com/nature-greenery-background-wallpaper-1920x1080-10692_48.jpg");
+    background-image: url("../public/cover.jpg");
+    object-fit: fill;
 }
+
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #045c88;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #045c88;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
