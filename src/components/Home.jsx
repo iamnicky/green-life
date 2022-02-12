@@ -34,9 +34,10 @@ export default function () {
       <div className='h-1 w-16 sm:w-32 bg-white mt-1 rounded'></div>
       </main>
 
-      <BlogItem/>
-      <BlogItem/>
-      <BlogItem/>
+      <BlogItem url="https://ichef.bbci.co.uk/news/976/cpsprodpb/957C/production/_111686283_pic1.png" title="nature"/>
+       
+     
+      
       </section>
     </div>
   )

@@ -1,17 +1,12 @@
 import React from 'react'
 
-export default function BlogItem() {
+export default function BlogItem(props) {
   return (
-  <div className='flex justify-center'>
-    <div className='bg-blue-300 w-96 h-auto flex  sm:border-t sm:border-b sm:divide-y mb-5 sm:mb-8 rounded-lg'>
-       <div class="flex flex-wrap gap-4 lg:gap-6 sm:py-2.5">
-       <div class="sm:-my-2.5">
-              <a href="#" class="group w-24 sm:w-40 h-40 sm:h-56 block bg-gray-100 rounded-lg overflow-hidden ">
-                <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/957C/production/_111686283_pic1.png"  class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-200" />
-              </a>
-            </div>
-       </div>
-    </div>
+  <div className='bg-blue-500 h-64 w-80 sm:w-96 overflow-hidden rounded-t-lg flex flex-col shadow-lg cursor-pointer '>
+   <img src={props.url} alt="error image" className='overflow-hidden w-full h-64 hover:scale-110 hover:transition hover:ease-in hover:delay-200  transition  ease-out delay-200
+   '/>
+   <h1 className='capitalize text-center mt-2 text-3xl sm:text-2xl text-red-300 '>{props.title}</h1>
+   
     </div>
             
     
