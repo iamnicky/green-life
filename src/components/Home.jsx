@@ -3,7 +3,7 @@ import BlogItem from './BlogItem'
 
 export default function () {
   return (
-    <div className='bg-green-600'>
+    <div className='bg-green-600 flex flex-col'>
       <section className='bg-image w-full h-96 bg-no-repeat flex flex-col justify-center items-center'>
       <h1 className='capitalize text-white text-2xl sm:text-4xl text-center mx-4'>Welcome to the world of nature</h1>
       <button className='text-white text-lg sm:text-2xl capitalize bg-green-500 px-4 py-1 mt-8 rounded hover:bg-green-600'>About Us</button>
@@ -34,11 +34,19 @@ export default function () {
       <div className='h-1 w-16 sm:w-32 bg-white mt-1 rounded'></div>
       </main>
 
-      <BlogItem url="https://ichef.bbci.co.uk/news/976/cpsprodpb/957C/production/_111686283_pic1.png" title="nature"/>
-       
-     
+       <article className='flex flex-wrap justify-evenly mt-4'>
+       <BlogItem url="https://ichef.bbci.co.uk/news/976/cpsprodpb/957C/production/_111686283_pic1.png" title="nature"/>
+       <BlogItem url="https://ichef.bbci.co.uk/news/976/cpsprodpb/957C/production/_111686283_pic1.png" title="nature"/>
+       <BlogItem url="https://ichef.bbci.co.uk/news/976/cpsprodpb/957C/production/_111686283_pic1.png" title="nature"/>
+      </article>
+       <article className='flex flex-wrap justify-evenly'>
+       <BlogItem url="https://ichef.bbci.co.uk/news/976/cpsprodpb/957C/production/_111686283_pic1.png" title="nature"/>
+       <BlogItem url="https://ichef.bbci.co.uk/news/976/cpsprodpb/957C/production/_111686283_pic1.png" title="nature"/>
+       <BlogItem url="https://ichef.bbci.co.uk/news/976/cpsprodpb/957C/production/_111686283_pic1.png" title="nature"/>
+      </article>
       
       </section>
-    </div>
+      <button className='justify-self-end self-end capitalize bg-blue-600 py-1 px-4 text-white hover:bg-blue-700 rounded'>Read all</button>
+      </div>
   )
 }
